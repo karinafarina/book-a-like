@@ -16,9 +16,12 @@ $("document").ready(function() {
 	console.log('worked');
 
 	function displaySearchData(data) {
-		console.log(data);
-		for(var i = 0; i< data.results.length; i++) {
-			console.log(data.results[i]);
+		console.log(data.Similar.Results);
+		for(var i = 0; i< data.Similar.Results.length; i++) {
+			console.log(data.Similar.Results[i]);
+			
+			var results = data.Similar.Results[i];
+			$("#results").append("<li>" + results.Name + "</li>");
 		}
 	}
 
