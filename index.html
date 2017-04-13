@@ -3,14 +3,23 @@
 <head>
 	<title>Fetch Recipe</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<div class="container">
-
-		<input id="search-box" type="text">
-    	<input id="submit" type="button" value="Submit">
-  		<ul id="results"></ul>
+	<div class="header">
+		
+		<ul id="nav">
+  			<li class="nav-bar">BOOK PLEASE</li>
+  			<li class="nav-bar" id="search-li"><a href="#">Search</li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="search-box-container">
+			<input id="search-box" type="text">
+    		<input id="submit" type="button" value="Submit">
+    	</div>
+    	<ul id="results"></ul>
   	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
