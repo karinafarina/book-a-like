@@ -15,7 +15,7 @@ $("document").ready(function() {
 	}
 	console.log('worked');
 
-	$("#search-li").click(function() {
+	$(".search").click(function() {
 		console.log('search-li clicked');
 		$(this).hide("slow");
 		$('.search-box-container').show('slow');
@@ -27,13 +27,13 @@ $("document").ready(function() {
 			console.log(data.Similar.Results[i]);
 			
 			var results = data.Similar.Results[i];
-			$("#results").append("<li>" + results.Name + "</li><br>" + "<li>" + results.wTeaser + "</li><br>");
+			$("#results").append("<li class='book-title'>" + results.Name + "</li><br>" + "<li>" + results.wTeaser + "</li><br>");
 		}
 	}
 
 
 	$("#submit").click(function() {
-		//event.preventDefault();
+		$('.search-box-container').hide('slow');
 		console.log("clicked");
 		getDataFromApi($("#search-box").val(), displaySearchData);
 				

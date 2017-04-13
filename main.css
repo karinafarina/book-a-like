@@ -1,30 +1,38 @@
  html {
     height: 100%;
+    margin-top: 0px;
  }
 
  body {
     height: 100%;
     width: 100%;
+    margin: auto;
     font-family: : "Roboto", sans-serif;
     text-align: center;
     font-size: 3em;
     border: 2px solid black;
+    margin-top: 0px;
 }
 
 .header {
     display: inline;
     height: 25%;
+    background-color: #e6e6ff;
+    margin-top: 0px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.title {
+    margin-top: 0;
+    font-size: 3em;
+    background-color: #e6e6ff;
 }
 
-.nav-bar {
-    display: inline;
-    background-color: #dddddd;
+.search {
+    height: 1.5em;
+    width: 4em;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 6em
 }
 
 .main {
@@ -36,9 +44,12 @@ ul {
     margin-top: 5em;
 }
 
+
+#instructions {
+    margin-bottom: 3em;
+}
 #search-box {
     width: 250px;
-    margin-top: 50px;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
@@ -57,10 +68,18 @@ ul {
     display: inline-block;
     list-style-type: none;
     text-align: left;
-    margin: 6em;
     height: 75%;
+    margin-left: 3em;
+    margin-right: 3em
 }
 
-#results li {
+.book-title {
     text-align: center;
+    margin-top: 1em;
+    font-size: 2em;
+    background-color: #e1e1ea;
+}
+li {
+    text-align: left;
+    margin-top: 1em;
 }
