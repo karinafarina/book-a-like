@@ -23,11 +23,14 @@ $("document").ready(function() {
 
 	function displaySearchData(data) {
 		console.log(data.Similar.Results);
-		for(var i = 0; i< data.Similar.Results.length; i++) {
-			console.log(data.Similar.Results[i]);
-			
-			var results = data.Similar.Results[i];
-			$("#results").append("<li class='book-title'>" + results.Name + "</li><br>" + "<li>" + results.wTeaser + "</li><br>");
+		if(data.Similar.Results.length === 0) {
+			$("#results").append("<h1 class='invalid'>Please enter a valid book title</h1>");
+		} else {
+			for(var i = 0; i< data.Similar.Results.length; i++) {
+				console.log(data.Similar.Results[i]);
+				var results = data.Similar.Results[i];
+				$("#results").append("<li class='book-title'>" + results.Name + "</li><br>" + "<li>" + results.wTeaser + "</li><br>");
+			}
 		}
 	}
 

@@ -17,14 +17,14 @@
 .header {
     display: inline;
     height: 25%;
-    background-color: #e6e6ff;
+    background-color: #dab3ff;
     margin-top: 0px;
 }
 
 .title {
     margin-top: 0;
-    font-size: 3em;
-    background-color: #e6e6ff;
+    font-size: 5em;
+    background-color: #dab3ff;
 }
 
 .search {
@@ -60,7 +60,7 @@
     height: 50px;
     width: 125px;
     border-radius: 3px;
-    border: 1px solid black;
+   
 }
 
 
@@ -70,10 +70,12 @@
     text-align: left;
     height: 75%;
     margin-left: 3em;
-    margin-right: 3em
+    margin-right: 3em;
+
 }
 
 .book-title {
+    box-shadow: 2px 2px 4px #999;
     text-align: center;
     margin-top: 1em;
     font-size: 2em;
