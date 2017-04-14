@@ -7,7 +7,7 @@
     height: 100%;
     width: 100%;
     margin: auto;
-    font-family: : "Roboto", sans-serif;
+    font-family: 'Asar', serif;
     text-align: center;
     font-size: 3em;
     border: 2px solid black;
@@ -28,8 +28,8 @@
 }
 
 .search {
-    height: 1.5em;
-    width: 4em;
+    height: 2em;
+    width: 5em;
     font-size: 1em;
     border-radius: 5px;
     margin-top: 6em
