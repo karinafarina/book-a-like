@@ -25,6 +25,7 @@ $("document").ready(function() {
 		console.log(data.Similar.Results);
 		if(data.Similar.Results.length === 0) {
 			$("#results").append("<h1 class='invalid'>Please enter a valid book title</h1>");
+			$('.search-box-container').show('fast');
 		} else {
 			for(var i = 0; i< data.Similar.Results.length; i++) {
 				console.log(data.Similar.Results[i]);
@@ -39,7 +40,6 @@ $("document").ready(function() {
 		$('.search-box-container').hide('slow');
 		console.log("clicked");
 		getDataFromApi($("#search-box").val(), displaySearchData);
-				
 	});
 });
 
