@@ -16,9 +16,11 @@ $("document").ready(function() {
 	console.log('worked');
 
 	$(".search").click(function() {
+		$('#new-search').hide('fast');
+		$('#results').html('');
 		console.log('search-li clicked');
 		$(this).hide("slow");
-		$('.search-box-container').show('slow');
+		$('#search-box-container').show('slow');
 	})
 
 	function displaySearchData(data) {
@@ -29,29 +31,31 @@ $("document").ready(function() {
 			
 		} else {
 			for(var i = 0; i< data.Similar.Results.length; i++) {
+				
 				console.log(data.Similar.Results[i]);
 				var results = data.Similar.Results[i];
 				$("#results").append("<li class='book-title'>" + results.Name + "</li><br>" + "<li>" + results.wTeaser + "</li><br>");
+				$('#search-box-container').hide('slow');
+				$('#new-search').show('slow');
+				$('.search').show('fast');
 			}
 		}
 	}
+
+	function reset() {
+    		document.getElementById("search-box-container").reset();
+		};
+
 	
 
 	$("#submit").click(function() {
-		$('.search-box-container').hide('slow');
+    	
 		console.log("clicked");
 		getDataFromApi($("#search-box").val(), displaySearchData);
-		
-
+		reset();
 	});
+
+
 });	
-	/*$('#search-box').focus(function(){
-  		$(this).val('');
-  		$('.search-box-container').show("slow");
-	});
-
-
-*/
-
-
+	
  

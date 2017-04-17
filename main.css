@@ -1,6 +1,7 @@
  html {
     height: 100%;
     margin-top: 0px;
+
  }
 
  body {
@@ -10,7 +11,7 @@
     font-family: 'Asar', serif;
     text-align: center;
     font-size: 3em;
-    border: 2px solid black;
+    
     margin-top: 0px;
 }
 
@@ -27,6 +28,11 @@
     background-color: #dab3ff;
 }
 
+#new-search {
+    display: none;
+    margin-bottom: -4em;
+}
+
 .search {
     height: 2em;
     width: 5em;
@@ -39,7 +45,7 @@
     height: 75%;
 }
 
-.search-box-container {
+#search-box-container {
     display: none;
     margin-top: 5em;
 }
