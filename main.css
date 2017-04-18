@@ -68,7 +68,8 @@
 
 #submit {
     height: 2em;
-    width: 4em;
+    width: 5em;
+    background-color: #d5dfef;
     border-radius: 3px;
     font-family: sans-serif;
     box-shadow: blue;
