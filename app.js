@@ -34,7 +34,7 @@ $("document").ready(function() {
 				
 				console.log(data.Similar.Results[i]);
 				var results = data.Similar.Results[i];
-				$("#results").append("<li class='book-title'>" + results.Name + "</li><br><li>" + results.wTeaser + "<br><a href=" + results.wUrl + ">Click for more information</a></li><br>");
+				$("#results").append("<li class='book-title'>" + results.Name + "</li><br><li>" + results.wTeaser + "<br><a href=" + results.wUrl + "><br>Click here for more information</a></li><br>");
 				$('#search-box-container').hide('slow');
 				$('#new-search').show('slow');
 				$('.search').show('fast');
@@ -48,9 +48,9 @@ $("document").ready(function() {
 
 	
 
-	$("#submit").click(function() {
-    	
-		console.log("clicked");
+	$("#search-box-container").submit(function(event) {
+		console.log("clicked, submitted");
+		event.preventDefault();
 		getDataFromApi($("#search-box").val(), displaySearchData);
 		reset();
 	});
