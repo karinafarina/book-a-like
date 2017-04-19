@@ -20,12 +20,12 @@
     height: 25%;
     background-color: #dab3ff;
     margin-top: 0px;
-    font-family: sans-serif;
+    
 }
 
 .title {
     margin-top: 0;
-    font-size: 4em;
+    font-size: 3em;
     background-color: #ba91d2;
 }
 
@@ -92,7 +92,20 @@
     background-color: #8664c2;
     border-radius: 3px;
 }
+
 li {
     text-align: left;
     margin-top: 1em;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.5em;
+    }
+    #instructions {
+        font-size: 2em;
+    }
+    .teaser {
+        font-size: 1.5em;
+    }
+} 

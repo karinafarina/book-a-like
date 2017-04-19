@@ -16,11 +16,11 @@ $("document").ready(function() {
 	console.log('worked');
 
 	$(".search").click(function() {
-		$('#new-search').hide('fast');
+		$('#new-search').fadeOut('fast');
 		$('#results').html('');
 		console.log('search-li clicked');
-		$(this).hide("slow");
-		$('#search-box-container').show('slow');
+		$(this).fadeOut("fast");
+		$('#search-box-container').fadeIn('slow');
 	})
 
 	function displaySearchData(data) {
@@ -34,10 +34,10 @@ $("document").ready(function() {
 				
 				console.log(data.Similar.Results[i]);
 				var results = data.Similar.Results[i];
-				$("#results").append("<li class='book-title'>" + results.Name + "</li><br><li>" + results.wTeaser + "<br><a href=" + results.wUrl + "><br>Click here for more information</a></li><br>");
-				$('#search-box-container').hide('slow');
-				$('#new-search').show('slow');
-				$('.search').show('fast');
+				$("#results").append("<li class='book-title'>" + results.Name + "</li><br><li class='teaser'>" + results.wTeaser + "<br><a href=" + results.wUrl + "><br>Click here for more information</a></li><br>");
+				$('#search-box-container').fadeOut('fast');
+				$('#new-search').fadeIn('slow');
+				$('.search').fadeIn('slow');
 			}
 		}
 	}
