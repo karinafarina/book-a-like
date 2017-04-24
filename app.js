@@ -24,7 +24,7 @@ $("document").ready(function() {
 	function displaySearchData(data) {
 		console.log(data.Similar.Results);
 		if(data.Similar.Results.length === 0) {
-			alert("Please enter a valid book title");
+			alert("That title not found. Please check spelling or try a different title.");
 			
 		} else {
 			for(var i = 0; i< data.Similar.Results.length; i++) {
